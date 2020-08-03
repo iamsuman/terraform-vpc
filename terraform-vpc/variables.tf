@@ -26,3 +26,9 @@ variable  "key_name" {}
 variable "min_size" {}
 variable "max_size" {}
 variable "user_data" {}
+
+//variable "private_ec2_security_groups" {}
+//variable "private_vpc_subnet" {}
+variable "private_min_size" {}
+variable "private_max_size" {}
+variable "private_user_data" {}
