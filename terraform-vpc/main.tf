@@ -15,9 +15,10 @@ module "autoscaling_group" {
   ami_id = var.ami_id
   ec2_security_groups = module.security_module.bastion_sg_id
   instance_type = var.instance_type
+  ebs_volume_size = var.ebs_volume_size
   key_name = var.key_name
-  max_size = var.max_size
-  min_size = var.min_size
+  public_max_size = var.public_max_size
+  public_min_size = var.public_min_size
   root_volume_size = var.root_volume_size
   user_data = var.user_data
   vpc_subnet = module.subnet_module.public_subnets_id

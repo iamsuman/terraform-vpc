@@ -25,7 +25,7 @@ resource "aws_route_table" "rr" {
   }
 }
 
-resource "aws_route_table_association" "route1" {
-  route_table_id = aws_route_table.rr.id
-  subnet_id = "subnet-00c6acf7e7483e68d"
-}
+//resource "aws_route_table_association" "route1" {
+//  route_table_id = aws_route_table.rr.id
+//  subnet_id = "subnet-00c6acf7e7483e68d"
+//}
